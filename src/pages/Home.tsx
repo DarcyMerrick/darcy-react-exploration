@@ -1,14 +1,14 @@
-import './App.css';
-import FancyText from '../components/text/fancy-highlight/fancy-highligh-text';
+import './Home.scss';
+import FancyLink from '../components/text/fancy-highlight/fancy-highlight-link';
 
-function App() {
+const Home = () => {
   return (
     <div className="App">
       <div className="content">
         <h1>Hello world</h1>
         <p>
           This is normal text and some more
-            <FancyText url="">This is the fancy text</FancyText>
+            <FancyLink url="">This is the fancy text</FancyLink>
           and we are back to normal text
         </p>
       </div>
@@ -16,4 +16,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
