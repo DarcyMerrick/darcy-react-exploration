@@ -1,0 +1,15 @@
+.fancy-text{
+    background-image: linear-gradient(red, purple);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 300ms ease;
+
+
+    text-decoration: none;
+    font-weight: 900;
+
+    &:hover{
+        background-size: 100% 3px;
+    }
+}
