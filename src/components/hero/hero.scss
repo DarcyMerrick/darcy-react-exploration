@@ -1,0 +1,18 @@
+@import "utils/shared";
+
+.hero{
+    padding: 4rem;
+}
+
+.hero-title {
+    font-size: 64px;
+    text-shadow: 
+        0.025em 0.025em 0 $grey-mid,
+        0.05em 0.05em 0 $purple-mid,
+        0.075em 0.075em 0 $purple-mid;
+    margin-bottom: 0;
+}
+
+.hero-subtitle {
+    font-size: 16px ;
+}
