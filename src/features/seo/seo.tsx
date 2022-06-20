@@ -1,3 +1,5 @@
+import {Helmet} from "react-helmet";
+
 interface iSEO {
   title: string;
   description: string;
@@ -6,14 +8,14 @@ interface iSEO {
 
 const SEO = ({ title, description, keywords }: iSEO) => {
   return (
-    <>
-      <meta name="title" content={title} />
-      <meta name="description" content={description} />
-      <meta name="keywords" content={keywords} />
-      <meta name="robots" content="index, follow" />
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <Helmet>
+      <title>{title}</title>
+      <meta name="description" content={description} ></meta>
+      <meta name="keywords" content={keywords} ></meta>
+      <meta name="robots" content="index, follow" ></meta>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8" ></meta>
       <meta name="language" content="English"></meta>
-    </>
+    </Helmet>
   );
 };
 
